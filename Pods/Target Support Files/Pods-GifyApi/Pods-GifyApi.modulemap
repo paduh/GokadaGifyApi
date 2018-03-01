@@ -1,0 +1,6 @@
+framework module Pods_GifyApi {
+  umbrella header "Pods-GifyApi-umbrella.h"
+
+  export *
+  module * { export * }
+}

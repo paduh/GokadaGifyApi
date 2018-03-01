@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C78DAB97A2FCF962EFC077 /* Pods_GifyApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F80BBA36FDC4DD7DEFAC94 /* Pods_GifyApi.framework */; };
+		542F641320487333003F8BF2 /* GifyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542F641220487333003F8BF2 /* GifyCell.swift */; };
+		542F641620487450003F8BF2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542F641520487450003F8BF2 /* Constant.swift */; };
 		54BA6A2E20483618007BA7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA6A2D20483618007BA7B4 /* AppDelegate.swift */; };
 		54BA6A3020483618007BA7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA6A2F20483618007BA7B4 /* ViewController.swift */; };
 		54BA6A3320483618007BA7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BA6A3120483618007BA7B4 /* Main.storyboard */; };
 		54BA6A3520483618007BA7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA6A3420483618007BA7B4 /* Assets.xcassets */; };
 		54BA6A3820483618007BA7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BA6A3620483618007BA7B4 /* LaunchScreen.storyboard */; };
+		54BA6A4420483C09007BA7B4 /* GifyConnectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA6A4320483C09007BA7B4 /* GifyConnectService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F80BBA36FDC4DD7DEFAC94 /* Pods_GifyApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifyApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542F641220487333003F8BF2 /* GifyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyCell.swift; sourceTree = "<group>"; };
+		542F641520487450003F8BF2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		54BA6A2A20483618007BA7B4 /* GifyApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifyApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BA6A2D20483618007BA7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BA6A2F20483618007BA7B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		54BA6A3420483618007BA7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54BA6A3720483618007BA7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54BA6A3920483618007BA7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BA6A4320483C09007BA7B4 /* GifyConnectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifyConnectService.swift; sourceTree = "<group>"; };
+		8BBDFB77F9F24498D0524DCD /* Pods-GifyApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifyApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifyApi/Pods-GifyApi.release.xcconfig"; sourceTree = "<group>"; };
+		C7D192B759301FC95BEF35D9 /* Pods-GifyApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifyApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifyApi/Pods-GifyApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C78DAB97A2FCF962EFC077 /* Pods_GifyApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1F82A9AB82A982C2D1CBF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7D192B759301FC95BEF35D9 /* Pods-GifyApi.debug.xcconfig */,
+				8BBDFB77F9F24498D0524DCD /* Pods-GifyApi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		542F641420487439003F8BF2 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				542F641520487450003F8BF2 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		54BA6A2120483618007BA7B4 = {
 			isa = PBXGroup;
 			children = (
 				54BA6A2C20483618007BA7B4 /* GifyApi */,
 				54BA6A2B20483618007BA7B4 /* Products */,
+				1B1F82A9AB82A982C2D1CBF2 /* Pods */,
+				867B2F2E0C9CF81AB3F4FF0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,57 @@
 		54BA6A2C20483618007BA7B4 /* GifyApi */ = {
 			isa = PBXGroup;
 			children = (
-				54BA6A2D20483618007BA7B4 /* AppDelegate.swift */,
-				54BA6A2F20483618007BA7B4 /* ViewController.swift */,
+				542F641420487439003F8BF2 /* Constant */,
+				54BA6A4220483BEF007BA7B4 /* Services */,
+				54BA6A4120483BE8007BA7B4 /* Controller */,
+				54BA6A4020483BE4007BA7B4 /* View */,
+				54BA6A3F20483BD3007BA7B4 /* Model */,
 				54BA6A3120483618007BA7B4 /* Main.storyboard */,
 				54BA6A3420483618007BA7B4 /* Assets.xcassets */,
 				54BA6A3620483618007BA7B4 /* LaunchScreen.storyboard */,
 				54BA6A3920483618007BA7B4 /* Info.plist */,
 			);
 			path = GifyApi;
+			sourceTree = "<group>";
+		};
+		54BA6A3F20483BD3007BA7B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54BA6A4020483BE4007BA7B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				542F641220487333003F8BF2 /* GifyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54BA6A4120483BE8007BA7B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54BA6A2D20483618007BA7B4 /* AppDelegate.swift */,
+				54BA6A2F20483618007BA7B4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54BA6A4220483BEF007BA7B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				54BA6A4320483C09007BA7B4 /* GifyConnectService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		867B2F2E0C9CF81AB3F4FF0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01F80BBA36FDC4DD7DEFAC94 /* Pods_GifyApi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54BA6A3C20483618007BA7B4 /* Build configuration list for PBXNativeTarget "GifyApi" */;
 			buildPhases = (
+				E1603B28A678EF8B746F1C29 /* [CP] Check Pods Manifest.lock */,
 				54BA6A2620483618007BA7B4 /* Sources */,
 				54BA6A2720483618007BA7B4 /* Frameworks */,
 				54BA6A2820483618007BA7B4 /* Resources */,
+				2AFC81F10EDC2A87A6D81FAF /* [CP] Embed Pods Frameworks */,
+				C5FEE79EB5E59E62A17F24DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +207,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AFC81F10EDC2A87A6D81FAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GifyApi/Pods-GifyApi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifyApi/Pods-GifyApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5FEE79EB5E59E62A17F24DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifyApi/Pods-GifyApi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1603B28A678EF8B746F1C29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifyApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54BA6A2620483618007BA7B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542F641320487333003F8BF2 /* GifyCell.swift in Sources */,
 				54BA6A3020483618007BA7B4 /* ViewController.swift in Sources */,
+				542F641620487450003F8BF2 /* Constant.swift in Sources */,
 				54BA6A2E20483618007BA7B4 /* AppDelegate.swift in Sources */,
+				54BA6A4420483C09007BA7B4 /* GifyConnectService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +407,7 @@
 		};
 		54BA6A3D20483618007BA7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D192B759301FC95BEF35D9 /* Pods-GifyApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +422,7 @@
 		};
 		54BA6A3E20483618007BA7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBDFB77F9F24498D0524DCD /* Pods-GifyApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
